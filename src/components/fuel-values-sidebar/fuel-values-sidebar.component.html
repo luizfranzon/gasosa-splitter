@@ -1,0 +1,17 @@
+<aside class="rounded-lg h-[100%] p-4 flex items-center flex-col bg-blue-200">
+  <span class="">Valores adicionados</span>
+
+  @for (fuelValue of fuelValues(); track fuelValue.id) {
+  <app-fuel-value-item [fuelValue]="fuelValue" />
+  }
+
+  <form (submit)="handleOnFormSubmit($event)" class="w-full">
+    <input
+      name="fuelValue"
+      id="fuelValue"
+      class="w-full border-2 border-blue-300 p-2 rounded outline-0"
+      type="number"
+      [(ngModel)]="typedFuelValue"
+    />
+  </form>
+</aside>

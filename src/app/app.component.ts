@@ -1,9 +1,9 @@
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { FuelValuesSidebarComponent } from '../components/fuel-values-sidebar/fuel-values-sidebar.component';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet],
+  imports: [FuelValuesSidebarComponent],
   templateUrl: './app.component.html',
 })
 export class AppComponent {}
